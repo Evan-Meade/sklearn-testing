@@ -73,8 +73,8 @@ clf.fit(x_train, y_train)
 yhat = clf.predict(x_test)
 
 # Prints predicted and actual classifications
-print(f"yhat: {yhat}")
-print(f"y:    {y_test}")
+print(f"\nyhat: {yhat}\n")
+print(f"y:    {y_test}\n")
 
 # Calculates number of successful predictions
 success = 0
@@ -83,4 +83,4 @@ for i in range(0, len(yhat)):
         success += 1
 
 # Prints success ratio of yhat
-print(f"success ratio: {success / len(yhat)}")
+print(f"success ratio: {success / len(yhat)}\n")
